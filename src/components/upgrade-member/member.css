@@ -1,0 +1,22 @@
+.card img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+.card p {
+    color: #555;
+    margin: 5px 0;
+}
+.state-head {
+    background-color: #00bfa5;
+    color: white;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+}

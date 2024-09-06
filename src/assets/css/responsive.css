@@ -1,0 +1,39 @@
+@media (min-width: 0px) and (max-width: 768px) {
+    .rightPage {
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .logoPayPanda {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+    .navsbar .nav-item {
+        display: none;
+    }
+    #topNavigationAside{
+        display: block;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+    .navsbar .nav-item {
+        padding: 8px 0;
+        font-size: 14px;
+        
+    }
+ 
+}
+@media (min-width: 993px)  {
+    #topNavigationAside,#right-aside{
+        display: none;
+    }
+}

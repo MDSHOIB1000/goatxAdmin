@@ -1,0 +1,76 @@
+.bpbs-container {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .bpbs-sidebar {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bpbs-main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bpbs-title {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .bpbs-select {
+    margin-bottom: 1rem;
+  }
+  
+  .bpbs-search-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .bpbs-search {
+    border-radius: 20px;
+  }
+  
+  .bpbs-operator-list {
+    margin-bottom: 1.5rem;
+  }
+  
+  .bpbs-operator-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bpbs-operator-item:hover {
+    background-color: #f1f3f5;
+  }
+  
+  .bpbs-pay-btn {
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+  }
+  
+  .bpbs-pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bpbs-loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .bpbs-sidebar {
+      margin-bottom: 1.5rem;
+    }
+  }

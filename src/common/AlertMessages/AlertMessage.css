@@ -1,0 +1,31 @@
+/* Alert.css */
+
+.alert {
+    padding: 1px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .filled {
+    background-color: rgba(0, 128, 0, 0.703);
+    border: 1px solid green;
+  }
+  
+  .warning {
+    background-color: rgba(0, 128, 0, 0.703);
+    border-color: green;
+    color: #fff;
+  }
+  .icon {
+    margin-right: 1.2rem;
+  }
+  .closeIcon svg{
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  /* Add more styles for other severities as needed */
+  

@@ -1,0 +1,37 @@
+.badge-success {
+    color: #fff;
+    background-color: #8611e6;
+    box-shadow: 0 7px 30px rgba(160, 6, 226, 0.3);
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #8611e6;
+    box-shadow: 0 7px 30px rgba(160, 6, 226, 0.3);
+}
+
+.badge-warning {
+    color: #fff;
+    background-color: #8611e6;
+    box-shadow: 0 7px 30px rgba(160, 6, 226, 0.3);
+}
+
+.projects-stat .project-names h6 {
+    width: 28px;
+    height: 28px;
+    border-radius: 5%;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding: 3px;
+    margin: 0 5px ;
+}
+.bg-primary-transparent {
+    background-color: #d9e8fe !important;
+}
+.text-primary {
+    color: #3858f9 !important;
+}
+.text-center {
+    text-align: center !important;
+}

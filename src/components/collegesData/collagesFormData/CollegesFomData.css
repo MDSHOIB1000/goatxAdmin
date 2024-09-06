@@ -1,0 +1,152 @@
+/* --------------for tags ---------------- */ 
+/* Wrapper */
+.tags_inp_wrapper {
+	position: relative;
+}
+
+/* Label Styles (Assuming there's a label inside or adjacent to the input) */
+.label {
+	font-weight: 450;
+	font-size: 22px;
+	line-height: 27px;
+	letter-spacing: -0.00533333em;
+	padding: 0 4px;
+	position: absolute;
+	left: 12px;
+	top: 9px;
+	background: #fff;
+	color: #b4bac4;
+	pointer-events: none;
+	transition: top 0.2s ease-out;
+}
+
+/* Input Container */
+.tags-input-container {
+	font-weight: 450;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: -0.00533333em;
+	background-color: #fff;
+	width: 100%;
+	height: 44px;
+	padding: 8px 14px;
+	border: 1px solid #dfe1e6;
+	border-radius: 8px;
+	color: #1a202c;
+	outline: none;
+	box-shadow: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+/* Input Styles */
+.tags-input {
+	border: none;
+	outline: none;
+	font-weight: 450;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: -0.00533333em;
+	background-color: #fff;
+	color: #1a202c;
+	padding: 8px 14px;
+	flex-grow: 1;
+	min-width: 100px;
+}
+
+.tags-input::placeholder {
+	color: transparent;
+}
+
+.tags-input:focus,
+.tags-input:active,
+.tags-input:not(:placeholder-shown) {
+	outline: none;
+	box-shadow: none;
+}
+
+.tags-input:focus + .label,
+.tags-input:active + .label,
+.tags-input:not(:placeholder-shown) + .label {
+	display: block;
+	top: -10px;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: -0.004em;
+	color: #4a5568;
+}
+
+.tags-input:focus + .label::after,
+.tags-input:active + .label::after,
+.tags-input:not(:placeholder-shown) + .label::after {
+	content: "*";
+	color: #e95454;
+}
+
+.tags-input:-webkit-autofill,
+.tags-input:-webkit-autofill:hover,
+.tags-input:-webkit-autofill:focus,
+.tags-input:-webkit-autofill:active {
+	box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+.tags-input:disabled {
+	background-color: #dfe1e6;
+	box-shadow: none;
+	color: #b4bac4;
+	pointer-events: none;
+}
+
+.tags-input.hasError {
+	border-color: #e95454;
+	color: #e95454;
+	outline: none;
+}
+
+.tags-input.hasError + .label {
+	color: #e95454;
+}
+
+.tags-input:read-only ~ span {
+	display: block;
+	color: #028d5e;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: -0.00466667em;
+	margin-top: 8px;
+}
+
+/* Tag Item Styles */
+.tag-item {
+	background-color: #edf2f7;
+	border-radius: 4px;
+	padding: 6px 10px;
+	display: flex;
+	align-items: center;
+	margin-right: 8px;
+	margin-bottom: 4px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #1a202c;
+}
+
+.tag-item .text {
+	margin-right: 8px;
+}
+
+.tag-item .close {
+	cursor: pointer;
+	color: #e95454;
+	font-size: 16px;
+}
+
+/* Error Text */
+.error {
+	margin-top: 2px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: #e95454;
+}

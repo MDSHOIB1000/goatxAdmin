@@ -1,0 +1,123 @@
+.main{
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 5px 8px #333;
+    padding: 20px 0px;
+}
+.wrapper_logo{
+    height: 200px;
+    position: relative;
+}
+.wrapper_logo .logo{
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.wrapper_logo .side{
+    height: 300px;
+    position: absolute;
+    left: 37px;
+    top: -59px;
+    transform: rotate(-90deg);
+}
+.wrapper_logo .side img {
+    height: 100%;
+    width: 100%;
+}
+.wrapper_logo .side2{
+    height: 300px;
+    position: absolute;
+    right: 37px;
+    bottom: -58px;
+    transform: rotate(90deg);
+}
+.wrapper_logo .side2 img {
+    height: 100%;
+    width: 100%;
+}
+.content{
+    width: 800px;
+    margin: auto;
+    margin-top: 17px;
+}
+.content .date{
+    text-align: end;
+    font-size: 17px;
+    font-size: 600;
+    color: #4b4b4b;
+}
+.content h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content p{
+    color: #7c7c7c;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 500s;
+}
+.content p b{
+    color: black;
+}
+.italic{
+    font-style: italics;
+}
+.content .faith{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.content .signature{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.mark{
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    align-items: center;
+}
+.text-end{
+    text-align: end;
+}
+.text-start{
+    text-align: left;
+}
+.border-t{
+    border-top: 1px solid black;
+}
+.flex{
+    display: flex;
+}
+.block{
+    display: block;
+}
+.adress{
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+.num{
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}

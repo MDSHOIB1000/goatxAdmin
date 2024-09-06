@@ -1,0 +1,13 @@
+/* for Tabel Header  */
+.expth {
+    position: relative;
+    padding: 8px;
+    text-align: left; /* Adjust alignment as needed */
+}
+
+.expth .expdiv {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Handles text overflow */
+}

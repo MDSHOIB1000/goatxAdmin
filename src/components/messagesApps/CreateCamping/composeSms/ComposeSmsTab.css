@@ -1,0 +1,55 @@
+.create-Camping-mess-bg-img {
+    background-image: url('../../../../assets/images/graph/Iphone.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* 'contain' will scale the image to fit inside the container */
+    background-position: center; /* Center the background image */
+    height: 58rem;
+}
+.triangle {
+    position: absolute;
+    left: -29px; /* Adjust this to position the triangle closer or further from the box */
+    top: -2px; /* Adjust this to position the triangle vertically */
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid gray;
+    border-bottom: 15px solid #fff; /* Same color as the background of the box */
+}
+.responsive-box {
+    width: 75%; /* Default width for larger screens */
+}
+
+@media (max-width: 1200px) {
+    .responsive-box {
+        width: 60%; /* Adjust for extra-large screens */
+        
+    }
+    .triangle {
+        position: absolute;
+        left: -13px; /* Adjust this to position the triangle closer or further from the box */
+        top: -2px; /* Adjust this to position the triangle vertically */
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid gray;
+        border-bottom: 15px solid #fff; /* Same color as the background of the box */
+    }
+}
+
+@media (max-width: 992px) {
+    .responsive-box {
+        width: 50%; /* Adjust for large screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-box {
+        width: 65%; /* Full width on medium screens */
+        left: 0;
+        top: auto;
+        margin-top: 15px; /* Adjust positioning for small screens */
+    }
+}
+
+
+

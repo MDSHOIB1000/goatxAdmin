@@ -1,0 +1,28 @@
+.asideBorder .aside_link {
+    border-top: dotted 1px darkblue !important;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    color: gray;
+}
+.aside-shadow {
+    -webkit-box-shadow: -1px -1px 23px -8px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: -1px -1px 23px -8px rgba(0, 0, 0, 0.56);
+    box-shadow: -1px -1px 23px -8px rgba(0, 0, 0, 0.56);
+    border-radius: 4px;
+    height: 66vh;
+    overflow-y: scroll;
+    position: sticky;
+    top: 20%;
+
+}
+.aside-shadow::-webkit-scrollbar {
+    width: 8px;
+}
+.aside-shadow::-webkit-scrollbar-track {
+    background-color: rgb(19, 247, 26);
+  }
+  .aside-shadow::-webkit-scrollbar-thumb {
+    background: #8e0be5;
+  }
