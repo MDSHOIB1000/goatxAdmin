@@ -19,6 +19,7 @@
     "firebase": "^10.12.4",
     "formik": "^2.4.5",
     "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.10.2",
     "i18next": "^23.10.0",
     "jodit-react": "^4.0.9",
     "js-sha256": "^0.11.0",

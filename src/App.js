@@ -283,6 +283,10 @@ import BusDiscount from "./components/busComp/busDiscount/BusDiscount";
 import BusUpload from "./components/busComp/busUpload/BusUpload";
 import VisaMarkup from "./components/visaComp/visaMarkup/Visamarkup";
 import VisaDiscount from "./components/visaComp/VisaDiscount/VisaDiscount";
+import AccountManagement from "./components/accountmanagment/AccountManagement";
+import DistributorRequest from "./components/distributorDepositeRequest/DistributorRequest";
+import RemarkPayment from "./components/flightComp/flightRequest/flightRequestList/RemarkPayment";
+import ViewInvoice from "./components/flightComp/viewInvoice/ViewInvoice";
 //---------------------JUNAID IMPORT END --------------------------
 //---------------------JUNAID IMPORT Start Goatx --------------------------
 // import HotelGroupRequestListPage from './pages/viaggioWebPages/hotelGroupRequestListPage';
@@ -1274,6 +1278,14 @@ function App() {
               <Route path="details-deposit-history" element={<DepositHistoryDetails />} />
               <Route path="flight-credit-notes" element={<FlightCreditNotePage />} />  */}
               {/* -----------------Mustaf Goatx Route"s Route Start --------- */}
+
+              {/* Junaid Route start */}
+
+              <Route path="Deposit-Request" element={<AccountManagement />} />
+              <Route path="distributor-deposite-request" element={<DistributorRequest />} />
+              <Route path="/flight-booking-txn-list/payment-remark" element={<RemarkPayment />} />
+              <Route path="/viewInvoice" element={<RemarkPayment />} />
+              <Route path="/flight-booking-txn-list/payment-remark/viewInvoice" element={<ViewInvoice />} />
 
               <Route path="*" element={<PageNotFound />} />
 
