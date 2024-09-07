@@ -297,6 +297,11 @@ import VisaRForm from "./components/visaComp/VisaRList/visaRForm/VisaRForm";
 import FlightGroupRequest from "./components/flightComp/flightGroupRequest/FlightGroupRequest";
 import FlightOfline from "./components/flightComp/flightOfline/FlightOfline";
 import FlightMarkUp from "./components/flightComp/flightMarkup/FlightMarkUp";
+import BalanceLedger from "./components/balance-ledger/BalanceLedger";
+import VenderLogs from "./components/VenderLogs/VenderLogs";
+import ApiManage from "./components/apiManagment/ApiManage";
+import ApiOffOnManage from "./components/api-manage/ApiOffOnManage";
+import { ViaggiooDashboardPage } from "./pages/viaggiooDashBoard";
 //---------------------JUNAID IMPORT END --------------------------
 //---------------------JUNAID IMPORT Start Goatx --------------------------
 // import HotelGroupRequestListPage from './pages/viaggioWebPages/hotelGroupRequestListPage';
@@ -392,7 +397,8 @@ function App() {
               path=""
               element={<PrivateRoute isAuthenticated={isAuthenticated} />}
             >
-              <Route path="admin" element={<DasBoardRight />} />
+              <Route path="admin" element={<ViaggiooDashboardPage />} />
+              {/* <Route path="admin" element={<DasBoardRight />} /> */}
               <Route path="bank-master" element={<BankMasterP />} />
               <Route path="zoon_area" element={<ZoonArea />} />
               <Route path="add-bank" element={<AddBank />} />
@@ -1303,6 +1309,13 @@ function App() {
               <Route path="/flight-booking-txn-list/payment-remark" element={<RemarkPayment />} />
               <Route path="/viewInvoice" element={<RemarkPayment />} />
               <Route path="/flight-booking-txn-list/payment-remark/viewInvoice" element={<ViewInvoice />} />
+
+
+              <Route path="balance-ledger" element={<BalanceLedger />} />
+              <Route path="Vendor-Account-Logs" element={<VenderLogs />} />
+              <Route path="api-management" element={<ApiManage />} />
+              <Route path="api-manage" element={<ApiOffOnManage />} />
+
 
               <Route path="*" element={<PageNotFound />} />
 

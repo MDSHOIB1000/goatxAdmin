@@ -1,0 +1,124 @@
+.dashboard-gaot {
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.date-filter {
+    text-align: right;
+    /* margin: 20px 0; */
+}
+
+.date-filter input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card-dash {
+    background: linear-gradient(90deg, rgba(18, 56, 176, 1) 0%, rgba(2, 1, 11, 0.6783963585434174) 100%);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 22%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.card-dash span.number {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-dash span.label {
+    color: #777;
+}
+
+.card-dash.flight .label {
+    color: #fff;
+}
+
+.card-dash.hotel .label {
+    color: #fff;
+}
+
+.card-dash.bus .label {
+    color: #fff;
+}
+
+.card-dash.visa .label {
+    color: #fff;
+}
+
+.bookings h2 {
+    color: #1a237e;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #1a237e;
+    color: white;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.bookings {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.set-list-Dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bookings table thead tr th {
+    background-color: var(--second-color) !important;
+    color: var(--white);
+}
+
+.set-list-Dashboard h1 {
+    margin-bottom: 0px;
+}
