@@ -283,6 +283,10 @@ import BusDiscount from "./components/busComp/busDiscount/BusDiscount";
 import BusUpload from "./components/busComp/busUpload/BusUpload";
 import VisaMarkup from "./components/visaComp/visaMarkup/Visamarkup";
 import VisaDiscount from "./components/visaComp/VisaDiscount/VisaDiscount";
+import VisaList from "./components/visaComp/VisaList/Visalist";
+import VisaAmendmentsList from "./components/visaComp/VisaAmendmentsList/VisaAmendmentslist";
+import VisaBooking from "./components/visaComp/visaBooking/visaBooking";
+import VisaSetings from "./components/visaComp/visaSettings/VisaSetings";
 import AccountManagement from "./components/accountmanagment/AccountManagement";
 import DistributorRequest from "./components/distributorDepositeRequest/DistributorRequest";
 import RemarkPayment from "./components/flightComp/flightRequest/flightRequestList/RemarkPayment";
@@ -1260,6 +1264,10 @@ function App() {
               <Route path="bus-upload" element={<BusUpload/>} />
               <Route path="visa-markup" element={<VisaMarkup/>} />
               <Route path="visa-discount" element={<VisaDiscount/>} />
+              <Route path="Visa-refunds-list" element={<VisaList/>} />
+              <Route path="visa-amendments-list" element={<VisaAmendmentsList/>} />
+              <Route path="visa-booking-list" element={<VisaBooking/>} />
+              <Route path="visa-setting-list" element={<VisaSetings/>} />
 
 
 
