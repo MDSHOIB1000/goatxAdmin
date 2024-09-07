@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import Breadcrumbs from '../../../common/breadcrumb/Breadcrumbs'
-import VisaListFilter from './VisaListtFilter/VisaListFilter'
-import VisaDetailsList from './VisaDetailsList/VisDetailsList'
+import VisaGroupReqList from './visaGroupReqList/VisaGroupReqList'
+import VisaGroupReqFilter from './visaGroupRweqFilter/VisaGroupReqFilter'
 
-function VisaList() {
+function VisaGroupReq() {
     const breadCrumbsTitle = {
         title_1: "Visa",
-        title_1: "Visa Refund List",
+        title_1: "Visa Markup",
     }
     const [count, setCount] = useState(10)
     const [page, setPage] = useState(0)
     const [aepsData, setAepsData] = useState()
     const [loading, setLoading] = useState(false)
     const [userData, setUserData] = useState(false)
-    const [selectAll, setSelectAll] = useState(false);
-    const [selectedUsers, setSelectedUsers] = useState([]);
     const token = window.localStorage.getItem('userToken')
     const getCurrentDate = () => {
         const date = new Date();
@@ -68,30 +66,13 @@ function VisaList() {
     useEffect(() => {
         getDmtTxnData(page)
     }, [])
-    const handleCheckboxChange = (event, user) => {
-        if (event.target.checked) {
-            setSelectedUsers([...selectedUsers, user]);
-        } else {
-            setSelectedUsers(selectedUsers.filter(selectedUser => selectedUser._id !== user._id));
-        }
-    };
-
-    const handleSelectAll = (event) => {
-        const isChecked = event.target.checked;
-        setSelectAll(isChecked);
-        if (isChecked) {
-            setSelectedUsers("");
-        } else {
-            setSelectedUsers([]);
-        }
-    };
     return (
         <>
             <Breadcrumbs breadCrumbsTitle={breadCrumbsTitle} />
-            <VisaListFilter initialValues={initialValues} page={page} count={count} submitForm={submitForm} aepsData={aepsData} />
-            <VisaDetailsList selectAll={selectAll} handleSelectAll={handleSelectAll} handleCheckboxChange={handleCheckboxChange} aepsData={aepsData} selectedUsers={selectedUsers} />
+            <VisaGroupReqFilter initialValues={initialValues} page={page} count={count} userData={userData} submitForm={submitForm} aepsData={aepsData} />
+            <VisaGroupReqList />
         </>
     )
 }
 
-export default VisaList
+export default VisaGroupReq
