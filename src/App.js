@@ -291,6 +291,12 @@ import AccountManagement from "./components/accountmanagment/AccountManagement";
 import DistributorRequest from "./components/distributorDepositeRequest/DistributorRequest";
 import RemarkPayment from "./components/flightComp/flightRequest/flightRequestList/RemarkPayment";
 import ViewInvoice from "./components/flightComp/viewInvoice/ViewInvoice";
+import VisaGroupReq from "./components/visaComp/visaGroupReq/VisaGroupReq";
+import VisaRList from "./components/visaComp/VisaRList/VisaRlist";
+import VisaRForm from "./components/visaComp/VisaRList/visaRForm/VisaRForm";
+import FlightGroupRequest from "./components/flightComp/flightGroupRequest/FlightGroupRequest";
+import FlightOfline from "./components/flightComp/flightOfline/FlightOfline";
+import FlightMarkUp from "./components/flightComp/flightMarkup/FlightMarkUp";
 import BalanceLedger from "./components/balance-ledger/BalanceLedger";
 import VenderLogs from "./components/VenderLogs/VenderLogs";
 import ApiManage from "./components/apiManagment/ApiManage";
@@ -983,7 +989,7 @@ function App() {
               />
               <Route
                 path="/update-company-master/:id"
-                element={<CompanyFormMaster  />}
+                element={<CompanyFormMaster />}
               />
               <Route
                 path="/create_company-master"
@@ -1255,6 +1261,9 @@ function App() {
               <Route path="flight-refunds-list" element={<FlightRefunds />} />
               <Route path="flight-Cancellation-request" element={<FlightCancel />} />
               <Route path="flight-booking-calendar" element={<FlightBookingCalender />} />
+              <Route path="flight-group-request" element={<FlightGroupRequest />} />
+              <Route path="offline-flight" element={<FlightOfline />} />
+              <Route path="flight-markup" element={<FlightMarkUp />} />
               <Route path="hotel-amendments-list" element={<HoteltAmbd />} />
               <Route path="hotel-booking-list" element={<HotelBooking />} />
               <Route path="my-booking-hotel-calender" element={<HotelBCalender />} />
@@ -1264,19 +1273,19 @@ function App() {
               <Route path="bus-amendments" element={<BusAmendments />} />
               <Route path="bus-booking-list" element={<BusBooking />} />
               <Route path="bus-cancellation-request" element={<BusCancel />} />
-              <Route path="bus-refund" element={<BusRefunds/>} />
-              <Route path="bus-group-request" element={<BusGroupRequest/>} />
-              <Route path="bus-discount" element={<BusDiscount/>} />
-              <Route path="bus-upload" element={<BusUpload/>} />
-              <Route path="visa-markup" element={<VisaMarkup/>} />
-              <Route path="visa-discount" element={<VisaDiscount/>} />
-              <Route path="Visa-refunds-list" element={<VisaList/>} />
-              <Route path="visa-amendments-list" element={<VisaAmendmentsList/>} />
-              <Route path="visa-booking-list" element={<VisaBooking/>} />
-              <Route path="visa-setting-list" element={<VisaSetings/>} />
-
-
-
+              <Route path="bus-refund" element={<BusRefunds />} />
+              <Route path="bus-group-request" element={<BusGroupRequest />} />
+              <Route path="bus-discount" element={<BusDiscount />} />
+              <Route path="bus-upload" element={<BusUpload />} />
+              <Route path="visa-markup" element={<VisaMarkup />} />
+              <Route path="visa-discount" element={<VisaDiscount />} />
+              <Route path="Visa-refunds-list" element={<VisaList />} />
+              <Route path="visa-amendments-list" element={<VisaAmendmentsList />} />
+              <Route path="visa-booking-list" element={<VisaBooking />} />
+              <Route path="visa-setting-list" element={<VisaSetings />} />
+              <Route path="visa-group-request-list" element={<VisaGroupReq />} />
+              <Route path="visa-list" element={<VisaRList />} />
+              <Route path="visa-list/add-visa" element={<VisaRForm />} />
               {/* {/* -----------------Mustaf Goatx Route"s Route Start --------- */}
               {/* <Route path="/hotel/my-bookings" element={<ViaggioHotelBookingListPage />} />
               <Route path="/hotel/group-requests" element={<HotelGroupRequestListPage />} />

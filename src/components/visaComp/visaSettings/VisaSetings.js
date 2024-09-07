@@ -83,7 +83,7 @@ function VisaSetings() {
                         <VisatypeList initialValues={initialValues} page={page} count={count} userData={userData} submitForm={submitForm} aepsData={aepsData} />
                     </Tab>
                     <Tab eventKey="applicationForm" title="APPLICATION FORM">
-                        <DocumentType initialValues={initialValues} page={page} count={count} userData={userData} submitForm={submitForm} aepsData={aepsData}/>
+                        <DocumentType/>
                     </Tab>
                 </Tabs>
             </div>

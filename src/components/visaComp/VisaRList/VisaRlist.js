@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Breadcrumbs from '../../../common/breadcrumb/Breadcrumbs'
-import VisaListFilter from './VisaListtFilter/VisaListFilter'
-import VisaDetailsList from './VisaDetailsList/VisDetailsList'
+import VisaListFilter from './VisaRListtFilter/VisaRListFilter'
+import VisaDetailsList from './VisaRDetailsList/VisRDetailsList'
+import VisaRListFilter from './VisaRListtFilter/VisaRListFilter'
+import VisaRDetailsList from './VisaRDetailsList/VisRDetailsList'
 
-function VisaList() {
+function VisaRList() {
     const breadCrumbsTitle = {
         title_1: "Visa",
-        title_1: "Visa Refund List",
+        title_1: "Visa  List",
     }
     const [count, setCount] = useState(10)
     const [page, setPage] = useState(0)
@@ -88,10 +90,10 @@ function VisaList() {
     return (
         <>
             <Breadcrumbs breadCrumbsTitle={breadCrumbsTitle} />
-            <VisaListFilter initialValues={initialValues} page={page} count={count} submitForm={submitForm} aepsData={aepsData} />
-            <VisaDetailsList selectAll={selectAll} handleSelectAll={handleSelectAll} handleCheckboxChange={handleCheckboxChange} aepsData={aepsData} selectedUsers={selectedUsers} />
+            <VisaRListFilter initialValues={initialValues} page={page} count={count} submitForm={submitForm} aepsData={aepsData} />
+            <VisaRDetailsList selectAll={selectAll} handleSelectAll={handleSelectAll} handleCheckboxChange={handleCheckboxChange} aepsData={aepsData} selectedUsers={selectedUsers} />
         </>
     )
 }
 
-export default VisaList
+export default VisaRList
