@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Formik } from 'formik';
 import CustomInputField from '../../../../common/CustomInputField';
-import { Pagination } from 'antd';
-import AddBusDiscount from './addBusDiscount/AddBusDiscount';
-function BusMarkupFilter({ count, page, submitForm, title }) {
+
+function VisaAmendmentsFilter({ count, page, submitForm, title }) {
     const [defaultInitialValues, setdefaultInitialValues] = useState({
         adhaar_no: '',
         customer_mobile: '',
@@ -13,7 +12,6 @@ function BusMarkupFilter({ count, page, submitForm, title }) {
         page: page,
 
     })
-    const [show, setShow] = useState(false);
 
     const getCurrentDate = () => {
         const date = new Date();
@@ -42,7 +40,7 @@ function BusMarkupFilter({ count, page, submitForm, title }) {
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption tbl-caption-2">
-                                    <h4 className="heading mb-0"><b> SEARCH BUS DISCOUNT
+                                    <h4 className="heading mb-0"><b> SEARCH  VISA   Amendments
                                     </b></h4>
                                 </div>
                                 <Formik
@@ -67,20 +65,35 @@ function BusMarkupFilter({ count, page, submitForm, title }) {
                                                 <div className="row">
 
 
-                                                    <div className="col-xl-3 mb-3">
+                                                    <div className="col-xl-4 mb-3">
                                                         <select className="form-select" aria-label="Default select example" name="ServiceProvider"
                                                             value={values.ServiceProvider}
                                                             hasError={errors.ServiceProvider && touched.ServiceProvider}
                                                             onChange={handleChange}
                                                             onBlur={handleBlur}>
-                                                            <option >Plese Select </option>
-                                                            <option value={1}>Discount For</option>
-                                                            <option value={3}>Date Range</option>
+                                                            <option > Select Business Type </option>
+                                                            <option value={1}>B2B</option>
+                                                            <option value={3}>B2C</option>
+                                                        </select>
+
+                                                    </div>
+                                                    <div className="col-xl-4 mb-3">
+                                                        <select className="form-select" aria-label="Default select example" name="ServiceProvider"
+                                                            value={values.ServiceProvider}
+                                                            hasError={errors.ServiceProvider && touched.ServiceProvider}
+                                                            onChange={handleChange}
+                                                            onBlur={handleBlur}>
+                                                            <option > Select Key To Search </option>
+                                                            <option value={1}>B2B</option>
+                                                            <option value={3}>B2C</option>
+                                                            <option value={3}>B2C</option>
+                                                            <option value={3}>B2C</option>
+                                                            <option value={3}>B2C</option>
                                                         </select>
 
                                                     </div>
 
-                                                    <div className="col-xl-3 mb-3">
+                                                    <div className="col-xl-4 mb-3">
                                                         <CustomInputField
                                                             type="text"
                                                             placeholder="Value"
@@ -93,7 +106,7 @@ function BusMarkupFilter({ count, page, submitForm, title }) {
                                                             id="value"
                                                         />
                                                     </div>
-                                                    <div className="col-xl-3 mb-3">
+                                                    <div className="col-xl-4 mb-3">
                                                         <CustomInputField
                                                             type="date"
                                                             placeholder="Start Date"
@@ -106,7 +119,7 @@ function BusMarkupFilter({ count, page, submitForm, title }) {
                                                             id="startDate"
                                                         />
                                                     </div>
-                                                    <div className="col-xl-3 mb-3">
+                                                    <div className="col-xl-4 mb-3">
                                                         <CustomInputField
                                                             type="date"
                                                             placeholder="End Date"
@@ -135,24 +148,12 @@ function BusMarkupFilter({ count, page, submitForm, title }) {
                                     }}
                                 </Formik>
                             </div>
-                            <div className='d-flex justify-content-end'>
-                                <button className="btn btn-secondary pd-x-20" type="submit"  onClick={() => setShow(!show)}>
-                                <i class="fas fa-plus"></i> Add Bus Discount
-                                </button>
-                                <button className="btn btn-warning pd-x-20" type="button" >
-                                <i class="fas fa-exchange-alt"></i> Change Status
-                                </button>
-                                <button className="btn btn-danger pd-x-20" type="button" >
-                                <i class="fas fa-trash"></i> Delete
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <AddBusDiscount show={show} setShow={setShow} />
         </>
     )
 }
 
-export default BusMarkupFilter
+export default VisaAmendmentsFilter

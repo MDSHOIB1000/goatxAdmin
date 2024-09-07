@@ -20349,6 +20349,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   padding: 0;
   background: rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.3);
+  /* color:"#fff"; */
   width: 3.25rem;
   height: 3.25rem;
   border-radius: 0.625rem;
