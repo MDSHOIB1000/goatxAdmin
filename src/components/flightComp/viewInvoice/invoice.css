@@ -1,0 +1,37 @@
+.invoice-container {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .invoiceHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 34px;
+    text-decoration: underline;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+  }
+  
+  .payment-details table {
+    margin-top: 20px;
+  }
+  
+  .important-info {
+    font-size: 12px;
+  }
+  
