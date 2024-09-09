@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Breadcrumbs from '../../../common/breadcrumb/Breadcrumbs'
-import BusMarkupFilter from './visaFilter/VisaMarkupFilter'
-import BusMarkupList from './visaMarkupList/VisaMarkupList'
 import VisaMarkupFilter from './visaFilter/VisaMarkupFilter'
 import VisaMarkupList from './visaMarkupList/VisaMarkupList'
 
