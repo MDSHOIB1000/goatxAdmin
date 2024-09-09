@@ -1,4 +1,4 @@
-export const baseUrl = 'https://collegebazaar.cityonline.shop/api/'
+export const baseUrl = 'https://backoffice.adamclick.com/api/'
 export const baseUrlImage = 'https://collegebazaar.cityonline.shop/api/cloudinary/'
 // export const baseUrVideosbefore = 'https://collegebazaar.cityonline.shop/api/cloudinary/video/'
 export const baseUrVideos = 'https://collegebazaar.cityonline.shop/api/cloudinary/video/'
