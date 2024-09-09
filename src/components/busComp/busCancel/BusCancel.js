@@ -6,7 +6,7 @@ import BusCancellationList from './busCanceltList/BusCancelList'
 function BusCancel() {
     const breadCrumbsTitle = {
         title_1: "Bus",
-        title_2: "Bus Amendments List"
+        title_2: "Bus Cancellation List"
     }
 
     const [count, setCount] = useState(10)

@@ -302,6 +302,12 @@ import VenderLogs from "./components/VenderLogs/VenderLogs";
 import ApiManage from "./components/apiManagment/ApiManage";
 import ApiOffOnManage from "./components/api-manage/ApiOffOnManage";
 import { ViaggiooDashboardPage } from "./pages/viaggiooDashBoard";
+import FlightDiscount from "./components/flightComp/flightDiscount/FlightDiscount";
+import FlightUploadTicket from "./components/flightComp/flightUploadTicket/FlightUploadTicket";
+import HotelHoldQues from "./components/hotelComp/hotelHoldQues/HotelHoldQues";
+import HotelMarkup from "./components/hotelComp/hotelMarkup/HotelMarkUp";
+import HotelDiscount from "./components/hotelComp/hotelDiscount/HotelDiscount";
+import HotelGroupRequest from "./components/hotelComp/HotelGroupRequest/HotelGroupRequest";
 //---------------------JUNAID IMPORT END --------------------------
 //---------------------JUNAID IMPORT Start Goatx --------------------------
 // import HotelGroupRequestListPage from './pages/viaggioWebPages/hotelGroupRequestListPage';
@@ -1264,8 +1270,14 @@ function App() {
               <Route path="flight-group-request" element={<FlightGroupRequest />} />
               <Route path="offline-flight" element={<FlightOfline />} />
               <Route path="flight-markup" element={<FlightMarkUp />} />
+              <Route path="flight-deal-dicount" element={<FlightDiscount />} />
+              <Route path="flight-upload-ticket" element={<FlightUploadTicket />} />
               <Route path="hotel-amendments-list" element={<HoteltAmbd />} />
+              <Route path="hotel-hold-queues" element={<HotelHoldQues />} />
+              <Route path="hotels-markup" element={<HotelMarkup />} />
+              <Route path="hotel-discounts" element={<HotelDiscount />} />
               <Route path="hotel-booking-list" element={<HotelBooking />} />
+              <Route path="hotel-group-request" element={<HotelGroupRequest />} />
               <Route path="my-booking-hotel-calender" element={<HotelBCalender />} />
               <Route path="hotel-cancellations-request" element={<HotelCancel />} />
               <Route path="hotel-refunds-list" element={<HotelRefunds />} />
