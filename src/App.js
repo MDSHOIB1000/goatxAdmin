@@ -308,6 +308,10 @@ import HotelHoldQues from "./components/hotelComp/hotelHoldQues/HotelHoldQues";
 import HotelMarkup from "./components/hotelComp/hotelMarkup/HotelMarkUp";
 import HotelDiscount from "./components/hotelComp/hotelDiscount/HotelDiscount";
 import HotelGroupRequest from "./components/hotelComp/HotelGroupRequest/HotelGroupRequest";
+import HolidayMarkup from "./components/Holiday-markup/HolidayMarkup";
+import HolidayDIscount from "./components/Holiday-discount/HolidayDIscount";
+import HolidayListPage from "./components/Holiday-list/HolidayListPage";
+import AddHoliday from "./components/Holiday-list/AddHoliday";
 //---------------------JUNAID IMPORT END --------------------------
 //---------------------JUNAID IMPORT Start Goatx --------------------------
 // import HotelGroupRequestListPage from './pages/viaggioWebPages/hotelGroupRequestListPage';
@@ -1322,12 +1326,16 @@ function App() {
               <Route path="/viewInvoice" element={<RemarkPayment />} />
               <Route path="/flight-booking-txn-list/payment-remark/viewInvoice" element={<ViewInvoice />} />
 
-
+              
               <Route path="balance-ledger" element={<BalanceLedger />} />
               <Route path="Vendor-Account-Logs" element={<VenderLogs />} />
               <Route path="api-management" element={<ApiManage />} />
               <Route path="api-manage" element={<ApiOffOnManage />} />
 
+              <Route path="holiday-markup-list" element={<HolidayMarkup />} />
+              <Route path="Holiday-Discount" element={<HolidayDIscount />} />
+              <Route path="Holiday-List" element={<HolidayListPage/>} />
+              <Route path="Add-Holiday" element={<AddHoliday/>} />
 
               <Route path="*" element={<PageNotFound />} />
 
